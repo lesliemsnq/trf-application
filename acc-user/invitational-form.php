@@ -12,7 +12,6 @@
   }
 ?>
 <!DOCTYPE html>
-<!-- YouTube or Website - CodingLab -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -92,10 +91,6 @@
     	    Welcome <strong><?php echo $_SESSION['username']; ?></strong>
           <?php endif ?>
       </span>
-      <!-- <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
     </nav>
     <!-- END OF NAVBAR -->
     
@@ -186,7 +181,13 @@
 
     
 
-        <a href="#"><button>Submit</button></a>
+        <div class="submit">
+          <button type="submit" class="show-modal" name="submit">Submit</button>
+        </div>
+        <span class="overlay"></span>
+
+
+        <script src="script.js"></script>
       </form>
 
     </div>
