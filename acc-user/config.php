@@ -1,5 +1,6 @@
 <?php
 
-$conn = mysqli_connect('localhost','root','','project');
+$conn = mysqli_connect("localhost", "root","");
+$db = mysqli_select_db($conn,"project");
 
 ?>
