@@ -1,8 +1,7 @@
 <?php 
 include 'config.php';
 
-if(isset($_POST['submit']))
-{
+if(isset($_POST['submit'])){
     $training = $_POST['training'];
     $date = $_POST['date'];
     $days = $_POST['days'];
@@ -16,15 +15,14 @@ if(isset($_POST['submit']))
     $person = $_POST['person'];
     $num = $_POST['num'];
 
-    $insert_query = mysqli_query($connection, "INSERT INTO form_invitational(training, date, days, time, place, invitational, organization, address, speaker, address1, person, num)
+    $query = mysqli_query($conn, "INSERT INTO form_invitational (training, date, days, time, place, invitational, organization, address, speaker, address1, person, num)
     VALUES('$training', '$date', '$days', '$time', '$place', '$invitational', '$organization', '$address', '$speaker', '$address1', '$person', '$num')");
 
-    if($insert_query) {
-    echo "<script> alert('Record Successfully!')</script>";
-    echo "<script> document.location='form_ol.php'</script>";
-    }
-    else{
-        echo "<script> alert('Try Again!')</script>";
+    if ($query) {
+        echo '<script> alert("Data Saved"); </script>';
+        echo "<script> document.location='invitational_form.php'</script>";
+    } else {
+        echo '<script> alert("Data not saved"); </script>';
     }
 }
 ?>
