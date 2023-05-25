@@ -12,7 +12,6 @@
   }
 ?>
 <!DOCTYPE html>
-<!-- YouTube or Website - CodingLab -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -101,14 +100,14 @@
     </nav>
     <!-- END OF NAVBAR -->
 
-    <main class="main" style="height:1750px;">
+    <main class="main" style="height:1760px;">
     <section class="container">
       <header>HOLY ANGEL UNIVERSITY <br>
         Human Resources Management Office <br>
         Human Resource Development<br>
       </header>
 
-      <form action="ol.php" class="form" method="POST">
+      <form action="ol.php" class="form" method="POST" id="myForm">
         <!-- TITLE OF  THE ACTIVITY -->
         <div class="input-box">
           <label for="act">Title of Activity</label>
@@ -211,67 +210,21 @@
             </div>
           </div>
         </div>
-        <a href="#"><button class="show-modal">Submit</button></a>
-        <!-- <span class="overlay"></span> -->
-
-        <div class="modal-box">
-          <i class="fa-regular fa-circle-check"></i>
-          <h2>Completed</h2>
-        <h3>You have sucessfully submitted the information.</h3>
-        <div class="buttons">
-          <button class="close-btn">Ok, Close</button>
+        <div class="submit">
+          <button type="submit" class="show-modal" name="submit">Submit</button>
         </div>
+        <span class="overlay"></span>
       </form>
-      </div>
-     
+
+
+      <script src="script.js"></script>
+      
+      
+        
     </main>
 
-    <script src="script.js"></script>
-    <script>
-      const section = document.querySelector("section"),
-        overlay = document.querySelector(".overlay"),
-        showBtn = document.querySelector(".show-modal"),
-        closeBtn = document.querySelector(".close-btn");
-
-      showBtn.addEventListener("click", () => section.classList.add("active"));
-
-      overlay.addEventListener("click", () =>
-        section.classList.remove("active")
-      );
-
-      closeBtn.addEventListener("click", () =>
-        section.classList.remove("active")
-      );
-    </script>
-    <!-- <script>
-    let modal-box = document.getElementById("modal-box");
-
-    function openModelBox(){
-      modal-box.classList.add("open-modal-box");
-    }
-    function closeModelBox(){
-      modal-box.classList.remove("open-popup");
-    }
-  </script> -->
- 
-   
-    
+  
   </body>
 
-  <!-- DATABASE MYPHPADMIN
-  act
-  date
-  day 
-  time  
-  place   
-  tact  
-  ynoption
-  nameacc
-  offadd 
-  person  
-  email   
-  num   
-  psf   
-  socmed -->
  
 </html>
