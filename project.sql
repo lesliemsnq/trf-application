@@ -25,7 +25,6 @@ CREATE TABLE `form_ol` (
   `act` varchar(255) NOT NULL,
   `date` varchar(255) NOT NULL,
   `days` varchar(255) NOT NULL,
-  `date` varchar(255) NOT NULL,
   `time` time NOT NULL,
   `place` varchar(255) NOT NULL,
   `tact` varchar(255) NOT NULL,
