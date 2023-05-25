@@ -12,7 +12,6 @@
   }
 ?>
 <!DOCTYPE html>
-<!-- YouTube or Website - CodingLab -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -101,7 +100,7 @@
 
 
     <!-- START OF MAIN CONTENT *FACE-T0-FACE FORM* -->
-    <main class="main" style="height:990px;">
+    <main class="main" style="height:1020px;">
 
       <section class="container">
         <header>HOLY ANGEL UNIVERSITY <br>
@@ -109,7 +108,7 @@
           Human Resource Development<br>
         </header>
 
-        <form action="connect-ftf.php" class="form" method="POST">
+        <form action="ftf.php" class="form" method="POST">
       
           <!-- TITLE OF  THE ACTIVITY -->
           <div class="input-box">
@@ -151,7 +150,10 @@
             <label for="check-rel"><input type="radio" id="check-rel" name="tact" value="others" /> Others</label><br>
             </div>
           </div>
-          <a href="#"><button>Submit</button></a>
+          <div class="submit">
+            <button type="submit" class="show-modal" name="submit">Submit</button>
+          </div>
+          <span class="overlay"></span>
         </form>
         </div>
       </section>
