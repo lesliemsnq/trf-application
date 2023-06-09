@@ -1,0 +1,45 @@
+table#table_user { 
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-family: Agenda-Light, sans-serif;
+  font-weight: 100; 
+  background: #333; color: #fff;
+  text-rendering: optimizeLegibility;
+  border-radius: 5px; 
+}
+table#table_user caption { 
+  font-size: 2rem; color: #444;
+  margin: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center left, center right; 
+}
+table#table_user thead th { font-weight: 600; }
+table#miyazaki thead th, table#table_user tbody td { 
+  padding: .8rem; font-size: 1.4rem;
+}
+table#table_user tbody td { 
+  padding: .8rem; font-size: 1.4rem;
+  color: #444; background: #eee; 
+}
+table#table_user tbody tr:not(:last-child) { 
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;  
+}
+
+@media screen and (max-width: 600px) {
+  table#table_user caption { background-image: none; }
+  table#table_user thead { display: none; }
+  table#table_user tbody td { 
+    display: block; padding: .6rem; 
+  }
+  table#table_user tbody tr td:first-child { 
+    background: #666; color: #fff; 
+  }
+  table#table_user tbody td:before { 
+    content: attr(data-th); 
+    font-weight: bold;
+    display: inline-block;
+    width: 6rem;  
+  }
+}
